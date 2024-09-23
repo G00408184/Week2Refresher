@@ -10,7 +10,7 @@ import java.util.List;
 @RequestMapping("/Product")
 public class ProductController {
 
-    ProductService productService;
+    ProductService productService = new ProductService();
 
     @GetMapping("/GET")
     public List<Product> getProduct(){
